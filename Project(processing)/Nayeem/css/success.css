@@ -1,0 +1,28 @@
+body{
+    background: #ddd;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.box{
+    position: relative;
+    background-color: whitesmoke;
+	max-width: 350px;
+	margin: 200px auto auto;
+	padding: 45px;
+	text-align: center;
+}
+
+
+.imgsrc{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    padding-top: 5%;
+
+}

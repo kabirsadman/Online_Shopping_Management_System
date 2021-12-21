@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../product/m.jpg);
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.h{
+  position: fixed;
+  width: 400px; 
+  height: 300px;
+  margin: 15% 30%;
+  text-align: center;
+}
+.h{
+  text-align: center;
+  color: white;
+  text-transform: none;
+  font-size: 20px;
+}
+.home ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkcyan;
+}
+
+.home a{
+  float: left;
+}
+
+.home a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.home a:hover {
+  background-color: lightcoral;
+}

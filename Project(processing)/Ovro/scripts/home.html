@@ -1,0 +1,85 @@
+<!-- <!<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Action Menu Button</title>
+    <link rel="stylesheet" href="../css/stylehome.css">
+  </head>
+  <body>
+    <div class="action">
+      <div class="profile" onclick="menuToggle();">
+    <img src="../image/ab.png">
+    </div>
+    <div class="menu">
+      <h3>Shanto<br><span>Admin</span></h3>
+
+
+<ul>
+  <li><img src=".image/user.png"><a href="#">Profile</a></li>
+  <li><img src=".image/logout.png"><a href="#">Logout</a></li>
+
+</ul>
+</div>
+</div>
+<script>
+  function menuToggle(){
+    const toggleMenu = document.querySelector('.menu');
+    toggleMenu.classList.toggle('active')
+
+  }
+  </script>
+
+
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dropdown Navigation Bar</title>
+	<link rel="stylesheet" href="../css/stylehome.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="navbar">
+        <div class="left">
+            <ul>
+              <li><a href="#">
+                <i class="fas fa-search"></i></a></li>
+
+                <!-- <i class="fas fa-envelope"></i></a></li> -->
+              <!-- <li><a href="#">
+                <i class="fas fa-bell"></i></a></li> -->
+          </ul>
+        </div>
+        <div class="right">
+            <ul>
+              <li>
+                <a href="#">
+                  <p><br> <span>Admin</span></p><img src="../image/ab.png" alt="Admin" width="40"><i class="fas fa-angle-down"></i>
+                </a>
+
+                <div class="dropdown">
+                    <ul>
+                      <li><a href="../view/profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                      <li><a href="#"><i class="fas fa-sliders-h"></i> Settings</a></li>
+                      <li><a href="#"><i class="fas fa-sign-out-alt"></i> Signout</a></li>
+                  </ul>
+                </div>
+
+              </li>
+          </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+	document.querySelector(".right ul li").addEventListener("click", function(){
+		  this.classList.toggle("active");
+	});
+</script>
+
+</body>
+</html>

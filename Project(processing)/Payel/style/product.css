@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-content: center; 
+	min-height: 100vh;
+	background-image: url(../product/tree.jpg);
+}
+.container{
+	position: relative;
+	width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+	padding: 20px;
+}
+.container .card{
+	width: 100%;
+	background: grey;
+}
+.container .card .imgBx{
+	position: relative;
+	width: 100%;
+	height: 310px;
+	overflow: hidden;
+}
+.container .card .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	object-fit: cover;
+	transition: 0.5% ease-in-out;
+	transform-origin: right;
+}
+.container .card:hover .imgBx img{
+	transform: scale(1.5);
+}
+.container .card .content{
+	padding: 10px;
+}
+.container .card .content .productName h3{
+	font-size: 18px;
+	font-weight: 500;
+	color: black;
+	margin: 5px 0;
+}
+.container .card .content .price_rating{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container .card .content .price_rating h2{
+	font-size   : 20px;
+	color: red;
+	font-weight: 500;
+}
+.container .card .content .price_rating .fa{
+	color: yellow;
+	cursor: pointer;
+}
+.container .card .content .price_rating .fa.grey {
+	color: white;
+}

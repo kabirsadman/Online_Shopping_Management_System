@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="contact.js"></script>
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+  <h2>Contact us</h2>
+  <div id="error_message">
+
+  </div>
+  <form action="" id="myform" onsubmit = "return validate();">
+    <div class="input_field">
+        <input type="text" placeholder="Name" id="name">
+    </div>
+    <div class="input_field">
+    <label for="cars">User Type:</label>
+
+<select name="user" id="usertype">
+  <option value="vendor">Vendor</option>
+  <option value="Wholesaler">Wholesaler</option>
+</select>
+</div>
+    <div class="input_field">
+        <input type="text" placeholder="User id" id="uid">
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Email" id="email">
+    </div>
+    <div class="input_field">
+        <textarea placeholder="Message" id="message"></textarea>
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+  </form>
+</div>
+
+  </body>
+</html>
